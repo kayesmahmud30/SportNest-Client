@@ -1,0 +1,111 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  /* Green-based palette (light by default) */
+  --green-deep: 5, 49, 40; /* rgb components for deep forest */
+  --green-700: 20, 106, 68; /* deep emerald */
+  --green-600: 31, 138, 89; /* emerald */
+  --green-500: 42, 164, 114; /* sage/primary */
+  --green-400: 127, 207, 158; /* mint */
+  --green-200: 223, 246, 234; /* soft light */
+  --green-100: 246, 251, 247; /* very light */
+
+  /* Semantic tokens */
+  --color-bg-rgb: 7, 29, 24; /* dark page background (rgb) */
+  --color-surface-rgb: 11, 38, 32; /* panels/cards */
+  --color-text: #e8f6ef;
+  --color-muted: #a7c9b1;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-primary-rgb: var(--green-600);
+  --focus-ring: rgba(var(--green-600), 0.14);
+}
+
+/* Dark / default theme (keeps app feeling premium + natural) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-rgb: 7, 29, 24;
+    --color-surface-rgb: 11, 38, 32;
+    --color-text: #e8f6ef;
+    --color-muted: #93b691;
+    --color-border: rgba(255, 255, 255, 0.06);
+    --color-primary-rgb: var(--green-600);
+    --focus-ring: rgba(var(--green-600), 0.12);
+  }
+}
+
+/* Semantic utility classes used across components */
+.bg-theme {
+  background-color: rgb(var(--color-bg-rgb));
+}
+.bg-surface {
+  background-color: rgb(var(--color-surface-rgb));
+}
+.overlay-theme {
+  background-color: rgba(var(--color-bg-rgb), 0.55);
+}
+.overlay-gradient {
+  background-image: linear-gradient(
+    90deg,
+    rgba(var(--color-bg-rgb), 0.85),
+    transparent 60%
+  );
+}
+.text-theme {
+  color: var(--color-text);
+}
+.muted-text {
+  color: var(--color-muted);
+}
+.border-theme {
+  border-color: var(--color-border);
+}
+.text-primary {
+  color: rgb(var(--color-primary-rgb));
+}
+.btn-primary {
+  background: linear-gradient(
+    90deg,
+    rgb(var(--green-700)),
+    rgb(var(--green-600))
+  );
+  color: #052218;
+  box-shadow: 0 8px 30px rgba(15, 122, 75, 0.12);
+}
+.btn-primary:hover {
+  filter: brightness(0.98);
+  transform: translateY(-1px);
+}
+.focus-ring {
+  box-shadow: 0 0 0 6px var(--focus-ring);
+}
+
+/* Slight global shadow and spacing polish to match premium aesthetic */
+.card-surface {
+  box-shadow: 0 18px 40px -18px rgba(2, 17, 12, 0.6);
+  border-radius: 14px;
+}
+.soft-shadow {
+  box-shadow: 0 10px 30px -12px rgba(2, 17, 12, 0.4);
+}
+
+/* Focus styles for interactive controls */
+input:focus,
+textarea:focus,
+select:focus,
+.focus-theme {
+  box-shadow: 0 0 0 6px rgba(var(--color-primary-rgb), 0.12);
+  border-color: rgb(var(--color-primary-rgb));
+  outline: none;
+}
+
+/* semi-opaque surface utilities */
+.bg-surface-80 {
+  background-color: rgba(var(--color-surface-rgb), 0.8);
+}
+.muted-surface {
+  background-color: rgba(var(--color-surface-rgb), 0.4);
+}
+.muted-surface-hover:hover {
+  background-color: rgba(var(--color-surface-rgb), 0.65);
+}
