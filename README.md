@@ -53,3 +53,13 @@ NEXT_PUBLIC_BETTER_AUTH_URL=your_client_url
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 ```
+
+---
+
+## 💡 About This Project
+
+🏟️ **SportNest Client** was built to provide a smooth, modern, and user-friendly sports facility booking experience. Users can easily explore facilities, make bookings, manage reservations, and authenticate securely using Better Auth and Google Login.
+
+⚡ The project was developed with **Next.js, React, Tailwind CSS, HeroUI, and Framer Motion** to create a fast, responsive, and visually engaging interface. Features like protected routes, toast notifications, loading states, animations, and dynamic facility management help simulate a real-world booking platform experience.
+
+✨ Designed with a clean recruiter-friendly UI for **mobile, tablet, and desktop devices**.
