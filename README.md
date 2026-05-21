@@ -23,6 +23,7 @@ The purpose of SportNest is to provide a smooth and user-friendly platform for b
 - 📱 Fully Responsive Design
 - 🎬 Framer Motion Animation
 - 🚫 Custom 404 Page
+- ⏳ Custom Loading Page
 - 🍞 Toast Notifications
 
 ## 🛠️ Technologies Used
