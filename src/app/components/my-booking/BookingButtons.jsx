@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { FaTriangleExclamation } from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 const BookingButtons = ({ booking }) => {
   const route = useRouter();
@@ -28,6 +29,7 @@ const BookingButtons = ({ booking }) => {
 
       if (res.ok) {
         route.refresh();
+        toast.success(`${booking.facility_name} is successfully removed`);
       }
     } catch (error) {
       console.error("Error canceling booking:", error);
@@ -85,7 +87,7 @@ const BookingButtons = ({ booking }) => {
                     <Button
                       color="danger"
                       onPress={handlebooking_del}
-                      className="h-12 rounded-2xl border border-red-500/20 bg-red-500/10 backdrop-blur-xl text-red-400 font-semibold hover:bg-red-500 hover:text-white transition-all duration-300 hover:scale-[0.98] shadow-lg shadow-red-500/10"
+                      className="h-12 rounded-full border border-red-500/20 bg-red-500/10 backdrop-blur-xl text-red-400 font-semibold hover:bg-red-500 hover:text-white transition-all duration-300 hover:scale-[0.98] shadow-lg shadow-red-500/10"
                     >
                       Yes, Cancel Booking
                     </Button>
@@ -93,7 +95,7 @@ const BookingButtons = ({ booking }) => {
                     <Button
                       variant="light"
                       slot="close"
-                      className="h-12 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white font-medium hover:bg-white/10 transition-all duration-300 hover:scale-[0.98]"
+                      className="h-12 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl text-white font-medium hover:bg-white/10 transition-all duration-300 hover:scale-[0.98]"
                     >
                       Keep Booking
                     </Button>

@@ -228,22 +228,14 @@ const FacilityDetailsCard = ({ data }) => {
             {/* BUTTON */}
             <button
               type="submit"
-              className="w-full cursor-pointer btn-primary font-bold py-3 rounded-lg active:scale-[0.98] transition"
+              className="w-full cursor-pointer btn-primary font-bold py-3 rounded-full active:scale-[0.98] transition "
             >
-              Confirm Booking
+              <p className="text-white">Confirm Booking</p>
             </button>
           </form>
         </div>
       </div>
 
-      {/* MARQUEE */}
-      <div className="mt-6 bg-surface border border-theme rounded-xl py-2 overflow-hidden">
-        <Marquee speed={85} gradient={false}>
-          <p className="text-sm font-semibold muted-text px-6">
-            Lunch break time: 3:00 PM – 4:00 PM | Please come back after break
-          </p>
-        </Marquee>
-      </div>
     </div>
   );
 };

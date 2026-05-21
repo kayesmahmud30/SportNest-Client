@@ -86,9 +86,9 @@ const MyFacilities = () => {
           <Link href="/add-facilities">
             <Button
               color="primary"
-              className="btn-primary border-none p-0 min-w-0 h-auto shadow-none hover:opacity-95 rounded-lg px-2 hover:scale-95 duration-300 cursor-pointer font-medium transition-colors"
+              className="btn-primary border-none h-auto shadow-none hover:opacity-95 rounded-full px-5 py-2  hover:scale-95 duration-300 cursor-pointer font-medium transition-colors"
             >
-              Add Facility
+              <p className="text-white">Add Facility</p>
             </Button>
           </Link>
         </div>
