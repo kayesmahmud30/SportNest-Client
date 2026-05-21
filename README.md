@@ -21,7 +21,6 @@ The purpose of SportNest is to provide a smooth and user-friendly platform for b
 - ❌ Cancel Bookings
 - 🔍 Search & Filter Facilities
 - 📱 Fully Responsive Design
-- 🌙 Theme Toggle
 - 🎬 Framer Motion Animation
 - 🚫 Custom 404 Page
 - 🍞 Toast Notifications
