@@ -2,11 +2,12 @@
 
 SportNest is a modern sports facility booking platform where users can explore, book, and manage sports venues easily. ⚽🏀🎾
 
-
 ## 🚀 Live Site
+
 🔗 https://sports-nine-eta.vercel.app
 
 ## 🎯 Purpose
+
 The purpose of SportNest is to provide a smooth and user-friendly platform for booking sports facilities online.
 
 ## ✨ Features
