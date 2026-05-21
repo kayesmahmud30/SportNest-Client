@@ -24,6 +24,7 @@ The purpose of SportNest is to provide a smooth and user-friendly platform for b
 - 🎬 Framer Motion Animation
 - 🚫 Custom 404 Page
 - ⏳ Custom Loading Page
+- ⚠️ Custom Error Page
 - 🔒 Protected Routes
 - 🍞 Toast Notifications
 
