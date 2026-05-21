@@ -24,3 +24,15 @@ The purpose of SportNest is to provide a smooth and user-friendly platform for b
 - 🎬 Framer Motion Animation
 - 🚫 Custom 404 Page
 - 🍞 Toast Notifications
+
+## 🛠️ Technologies Used
+
+- Next.js
+- React
+- Tailwind CSS
+- HeroUI
+- Better Auth
+- MongoDB
+- Axios
+- Framer Motion
+- React Toastify
