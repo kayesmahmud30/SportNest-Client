@@ -36,6 +36,7 @@ The purpose of SportNest is to provide a smooth and user-friendly platform for b
 - DaisyUI
 - HeroUI
 - Better Auth
+- Google OAuth
 - MongoDB
 - Axios
 - Framer Motion
