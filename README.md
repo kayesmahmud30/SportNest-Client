@@ -33,6 +33,7 @@ The purpose of SportNest is to provide a smooth and user-friendly platform for b
 - Next.js
 - React
 - Tailwind CSS
+- DaisyUI
 - HeroUI
 - Better Auth
 - MongoDB
