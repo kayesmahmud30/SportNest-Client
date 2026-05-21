@@ -36,3 +36,10 @@ The purpose of SportNest is to provide a smooth and user-friendly platform for b
 - Axios
 - Framer Motion
 - React Toastify
+
+## 📦 NPM Packages
+
+```bash
+npm install axios react-toastify react-icons lucide-react framer-motion
+npm install @heroui/react better-auth
+```
