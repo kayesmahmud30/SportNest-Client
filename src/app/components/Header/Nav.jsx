@@ -15,6 +15,7 @@ import { authClient } from "@/lib/auth-client";
 import { Button } from "@heroui/react";
 import Image from "next/image";
 import logo from "@/assets/logo.png";
+import { CgProfile } from "react-icons/cg";
 
 const Nav = () => {
   const pathname = usePathname();
@@ -275,8 +276,10 @@ const Nav = () => {
             </div>
           ) : (
             <Link href="/login">
-              <button className="btn btn-sm px-5 h-9 min-h-0 border-2 border-green-300 rounded-full btn-primary font-bold tracking-wide ">
-                <p className="text-white">Login</p>
+              <button className="btn btn-sm px-2 h-9 min-h-0 border-2 border-green-300 rounded-full btn-primary font-bold tracking-wide ">
+                <p className="text-white flex justify-center items-center gap-1">
+            <CgProfile className="text-[22px]"/>
+                  Login</p>
               </button>
             </Link>
           )}
